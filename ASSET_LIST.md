@@ -11,6 +11,7 @@
 | `assets/images/web/support.webp` | 多言語サポート | ヘッドセットで案内するサポートスタッフ | 実在担当者として扱わない |
 | `assets/images/web/setup.webp` | 配送・初期設定 | 届いたSIMカードを確認する利用者 | 生成画像内の説明書は読ませない |
 | `assets/images/web/og-image.jpg` | OGP/Twitterカード | 指定不要 | 1200×630 |
+| `assets/esim-device-illustration.png` | 対応端末・eSIMセクション背景 | 装飾画像のため空alt | 左側の余白に文章を配置 |
 
 `assets/images/source/`には高解像度PNGを保存している。通常実装では`web/`を使う。
 

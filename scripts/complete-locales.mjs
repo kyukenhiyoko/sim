@@ -71,16 +71,16 @@ const additions = {
 };
 
 Object.assign(additions.ja, {
-  'a11y.home':'SUMOU sim トップへ','a11y.mainNav':'メインナビゲーション','a11y.mobileNav':'モバイルナビゲーション','a11y.menu':'メニューを開く','a11y.serviceFeatures':'サービスの特徴','a11y.planTabs':'SIMプランを選択','a11y.footerNav':'フッターナビゲーション','payment.title':'クレジットカードがなくても\n申し込めます。'
+  'a11y.home':'SUMOU sim トップへ','a11y.mainNav':'メインナビゲーション','a11y.mobileNav':'モバイルナビゲーション','a11y.menu':'メニューを開く','a11y.serviceFeatures':'サービスの特徴','a11y.planTabs':'SIMプランを選択','a11y.footerNav':'フッターナビゲーション','payment.title':'クレジットカードがなくても\n申し込めます。','section.problems':'日本のSIM選びで、\n困っていませんか？'
 });
 Object.assign(additions.en, {
-  'a11y.home':'SUMOU sim home','a11y.mainNav':'Main navigation','a11y.mobileNav':'Mobile navigation','a11y.menu':'Open menu','a11y.serviceFeatures':'Service highlights','a11y.planTabs':'Choose a SIM plan','a11y.footerNav':'Footer navigation','payment.title':'Apply even without\na credit card.'
+  'a11y.home':'SUMOU sim home','a11y.mainNav':'Main navigation','a11y.mobileNav':'Mobile navigation','a11y.menu':'Open menu','a11y.serviceFeatures':'Service highlights','a11y.planTabs':'Choose a SIM plan','a11y.footerNav':'Footer navigation','payment.title':'Apply even without\na credit card.','section.problems':'Having trouble choosing\na SIM in Japan?'
 });
 Object.assign(additions.vi, {
-  'a11y.home':'Trang chủ SUMOU sim','a11y.mainNav':'Điều hướng chính','a11y.mobileNav':'Điều hướng di động','a11y.menu':'Mở menu','a11y.serviceFeatures':'Điểm nổi bật của dịch vụ','a11y.planTabs':'Chọn gói SIM','a11y.footerNav':'Điều hướng chân trang','payment.title':'Không có thẻ tín dụng\nvẫn có thể đăng ký.'
+  'a11y.home':'Trang chủ SUMOU sim','a11y.mainNav':'Điều hướng chính','a11y.mobileNav':'Điều hướng di động','a11y.menu':'Mở menu','a11y.serviceFeatures':'Điểm nổi bật của dịch vụ','a11y.planTabs':'Chọn gói SIM','a11y.footerNav':'Điều hướng chân trang','payment.title':'Không có thẻ tín dụng\nvẫn có thể đăng ký.','section.problems':'Bạn gặp khó khăn khi chọn\nSIM tại Nhật Bản?'
 });
 Object.assign(additions.zh, {
-  'a11y.home':'SUMOU sim首页','a11y.mainNav':'主导航','a11y.mobileNav':'移动端导航','a11y.menu':'打开菜单','a11y.serviceFeatures':'服务特点','a11y.planTabs':'选择SIM方案','a11y.footerNav':'页脚导航','payment.title':'没有信用卡\n也可以申请。'
+  'a11y.home':'SUMOU sim首页','a11y.mainNav':'主导航','a11y.mobileNav':'移动端导航','a11y.menu':'打开菜单','a11y.serviceFeatures':'服务特点','a11y.planTabs':'选择SIM方案','a11y.footerNav':'页脚导航','payment.title':'没有信用卡\n也可以申请。','section.problems':'选择日本SIM卡时\n遇到困难吗？'
 });
 
 const locales = {};

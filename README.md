@@ -106,7 +106,7 @@ node scripts/complete-locales.mjs
 
 ## 画像の差し替え
 
-通常表示には `assets/images/web/` の同名ファイルを使います。差し替える場合は同じファイル名・アスペクト比で書き出すとコード変更は不要です。ヒーローはPC用 `hero.webp`（3:2）とモバイル用 `hero-mobile.webp`（4:5）の両方を差し替えてください。OGPは `og-image.jpg`（1200×630）です。人物を実在利用者・推薦者・サポート担当者として扱わないでください。
+通常表示には `assets/images/web/` の同名ファイルを使います。差し替える場合は同じファイル名・アスペクト比で書き出すとコード変更は不要です。ヒーローはPC用 `hero.webp`（3:2）とモバイル用 `hero-mobile.webp`（4:5）の両方を差し替えてください。対応端末セクションの背景は `assets/esim-device-illustration.png`、OGPは `og-image.jpg`（1200×630）です。人物を実在利用者・推薦者・サポート担当者として扱わないでください。
 
 ## 画像生成について
 
