@@ -112,3 +112,4 @@ node scripts/complete-locales.mjs
 
 写真素材はCodexの組み込み画像生成機能で作成し、Web用に最適化しています。最終プロンプトは `ASSET_LIST.md` に要約しています。
 # sim
+# sim
