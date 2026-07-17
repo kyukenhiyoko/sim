@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 80" role="img" aria-labelledby="title desc">
+  <title id="title">SUMOU sim</title>
+  <desc id="desc">Pentagon network symbol with light SUMOU sim wordmark for dark backgrounds</desc>
+  <g transform="translate(4 4)" fill="none" stroke="#D8CABB" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M36 8 61 26 52 57 20 59 9 29Z"/>
+    <path d="m36 8 16 49M61 26 20 59M9 29h52" opacity=".6"/>
+  </g>
+  <g transform="translate(4 4)" fill="#F26A10" stroke="#2F251E" stroke-width="3">
+    <circle cx="36" cy="8" r="7"/><circle cx="61" cy="26" r="7"/><circle cx="52" cy="57" r="7"/><circle cx="20" cy="59" r="7"/><circle cx="9" cy="29" r="7"/>
+  </g>
+  <text x="91" y="53" fill="#FFFDF9" font-family="Inter, Arial, sans-serif" font-size="37" font-weight="750" letter-spacing="1">SUMOU</text>
+  <text x="250" y="53" fill="#F8A46D" font-family="Inter, Arial, sans-serif" font-size="37" font-weight="650">sim</text>
+</svg>

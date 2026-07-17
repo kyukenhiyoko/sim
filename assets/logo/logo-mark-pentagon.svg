@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72" role="img" aria-labelledby="title desc">
+  <title id="title">SUMOU sim pentagon network symbol</title>
+  <desc id="desc">Five circular nodes arranged as a pentagon and connected by lines</desc>
+  <g fill="none" stroke="#9E8B78" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M36 8 61 26 52 57 20 59 9 29Z"/>
+    <path d="m36 8 16 49M61 26 20 59M9 29h52" opacity=".55"/>
+  </g>
+  <g fill="#F26A10" stroke="#FFFDF9" stroke-width="3">
+    <circle cx="36" cy="8" r="7"/>
+    <circle cx="61" cy="26" r="7"/>
+    <circle cx="52" cy="57" r="7"/>
+    <circle cx="20" cy="59" r="7"/>
+    <circle cx="9" cy="29" r="7"/>
+  </g>
+</svg>

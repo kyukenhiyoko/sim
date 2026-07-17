@@ -1,0 +1,19 @@
+{
+  "color": {
+    "background": "#F6F1EA",
+    "surface": "#FFFDF9",
+    "surfaceAlt": "#EFE6DC",
+    "greige": "#D8CABB",
+    "greigeDark": "#9E8B78",
+    "orange": "#F26A10",
+    "orangeHover": "#D95605",
+    "orangeSoft": "#FFF0E4",
+    "ink": "#2F251E",
+    "text": "#4D423A",
+    "muted": "#6C6057",
+    "border": "#E7DDD2"
+  },
+  "radius": { "card": 24, "image": 28, "button": 999 },
+  "layout": { "contentMax": 1200, "wideMax": 1280 },
+  "breakpoint": { "tablet": 768, "desktop": 1024 }
+}

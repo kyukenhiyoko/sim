@@ -1,0 +1,29 @@
+{
+  "brandName": "SUMOU sim",
+  "applicationUrl": "https://user.jpmob.jp/",
+  "referenceUrl": "https://jpsmart.net/ja",
+  "applicationNote": "提携先の申込ページへ移動します。",
+  "sourceCheckedAt": "2026-07-17",
+  "legalRelationshipVerified": false,
+  "pricing": {
+    "setupFeeTaxIncluded": 3300,
+    "call": [
+      { "id": "call-light", "name": "ライト", "data": "1GB", "monthlyTaxIncluded": 880 },
+      { "id": "call-basic", "name": "ベーシック", "data": "3GB", "monthlyTaxIncluded": 1408 },
+      { "id": "call-standard", "name": "スタンダード", "data": "20GB", "monthlyTaxIncluded": 2178, "recommended": true },
+      { "id": "call-max", "name": "SUMOU MAX", "data": "直近3日で10GB", "monthlyTaxIncluded": 5478 }
+    ],
+    "data": [
+      { "id": "data-basic", "name": "ベーシック", "data": "3GB", "monthlyTaxIncluded": 1078 },
+      { "id": "data-standard", "name": "スタンダード", "data": "20GB", "monthlyTaxIncluded": 1848, "recommended": true },
+      { "id": "data-max", "name": "SUMOU MAX", "data": "直近3日で10GB", "monthlyTaxIncluded": 5148 }
+    ]
+  },
+  "company": {
+    "verifiedForSumouSim": false,
+    "candidateSeller": "株式会社CoeNova",
+    "phone": "075-315-5906",
+    "hours": "10:00–18:00",
+    "email": "sim-support@m.coenova.co.jp"
+  }
+}
