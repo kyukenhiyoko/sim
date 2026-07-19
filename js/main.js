@@ -40,7 +40,8 @@ function createPlanCard(plan, type) {
 
 function renderPlans(type) {
   const grid = $('[data-plan-grid]');
-  grid.replaceChildren(...SITE_CONFIG.pricing[type].map((plan) => createPlanCard(plan, type)));
+  const plans = [...SITE_CONFIG.pricing[type]].sort((a, b) => Number(Boolean(b.recommended)) - Number(Boolean(a.recommended)));
+  grid.replaceChildren(...plans.map((plan) => createPlanCard(plan, type)));
   $('[data-max-note]').hidden = !SITE_CONFIG.pricing[type].some((plan) => plan.maxPlan);
 }
 
@@ -127,7 +128,12 @@ function initializeLocaleSelectors() {
     select.addEventListener('change', async (event) => {
       await setLocale(event.target.value);
       if (event.target.closest('[data-mobile-menu]')) {
-        $('[data-menu-button]').click();
+        const button = $('[data-menu-button]');
+        const menu = $('[data-mobile-menu]');
+        button.setAttribute('aria-expanded', 'false');
+        menu.hidden = true;
+        document.body.classList.remove('menu-open');
+        button.focus();
       }
     });
   });
