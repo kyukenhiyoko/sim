@@ -329,6 +329,48 @@ html[lang="ja"] :where(p,li,dt,dd){text-wrap:pretty}
   border-radius:28px
 }
 .payment--embedded .payment__inner{width:100%;margin:0}
+.payment-slider{
+  --payment-slider-columns:3;
+  --payment-slider-gap:16px;
+  width:100%;
+  margin:28px 0;
+  overflow:hidden
+}
+.payment-slider__track{
+  display:flex;
+  column-gap:var(--payment-slider-gap);
+  margin:0;
+  padding:0;
+  list-style:none;
+  will-change:transform
+}
+.payment-method{
+  display:flex;
+  flex:0 0 calc((100% - (var(--payment-slider-gap) * (var(--payment-slider-columns) - 1))) / var(--payment-slider-columns));
+  min-width:0;
+  min-height:260px;
+  padding:20px;
+  flex-direction:column;
+  align-items:flex-start;
+  border:1px solid var(--color-border);
+  border-radius:20px;
+  background:var(--color-bg)
+}
+.payment-method__logo{
+  display:grid;
+  width:100%;
+  height:104px;
+  margin-bottom:20px;
+  place-items:center;
+  overflow:hidden;
+  border:1px dashed var(--color-border);
+  border-radius:14px;
+  background:var(--color-surface)
+}
+.payment-method__logo img{width:100%;height:100%;object-fit:contain;padding:12px}
+.payment-method__logo span{color:var(--color-muted);font-size:11px;font-weight:700;letter-spacing:.12em}
+.payment-method strong{font-size:18px;line-height:1.45}
+.payment-method small{margin-top:auto;padding-top:12px;color:var(--color-muted);font-size:13px;font-weight:500;line-height:1.55}
 .process-notes{
   display:grid;
   grid-template-columns:repeat(2,minmax(0,1fr));
@@ -358,12 +400,16 @@ html:not([lang="ja"]) :where(h1,h2,h3){overflow-wrap:normal;word-break:normal;hy
   .assurance-card:nth-child(n){border-right:1px solid var(--color-border);border-bottom:0}
   .assurance-card:last-child{border-right:0}
   .payment--embedded{padding:36px}
+  .payment-slider{--payment-slider-columns:2}
 }
 
 @media(max-width:767px){
   .comparison--embedded{margin-top:56px;padding-top:52px}
   .payment--embedded{margin-top:56px;padding:24px 20px;border-radius:22px}
   .payment--embedded .payment__inner{flex-direction:column}
+  .payment-slider{--payment-slider-columns:1;--payment-slider-gap:12px}
+  .payment-method{min-height:238px;padding:18px}
+  .payment-method__logo{height:96px}
   html[lang="ja"] .network-card--primary :is(dt[data-i18n="network.speedLabel"],dd[data-i18n="network.referenceMaxSpeed"]),
   html[lang="ja"] .payment__copy h2{white-space:pre-line;word-break:keep-all;overflow-wrap:normal}
   .process-notes{grid-template-columns:1fr;margin-top:40px}
@@ -374,8 +420,6 @@ html:not([lang="ja"]) :where(h1,h2,h3){overflow-wrap:normal;word-break:normal;hy
 }
 
 @media(max-width:359px){
-  .pill-list{grid-template-columns:1fr}
-  .pill-list li,.pill-list li:first-child,.pill-list li:last-child{grid-column:auto}
   .payment--embedded{padding-inline:16px}
   .comparison-table td{padding-inline:8px}
 }

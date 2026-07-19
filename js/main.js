@@ -123,6 +123,34 @@ function initializeHeader() {
   window.addEventListener('scroll', sync, { passive: true });
 }
 
+function initializePaymentSlider() {
+  const slider = $('[data-payment-slider]');
+  const track = $('[data-payment-track]');
+  if (!slider || !track || track.children.length < 2) return;
+
+  let moving = false;
+  const advance = () => {
+    if (moving || document.hidden) return;
+    const firstCard = track.firstElementChild;
+    if (!firstCard) return;
+    const gap = parseFloat(getComputedStyle(track).columnGap) || 0;
+    moving = true;
+    track.style.transition = 'transform 600ms cubic-bezier(.22,.61,.36,1)';
+    track.style.transform = `translateX(-${firstCard.getBoundingClientRect().width + gap}px)`;
+  };
+
+  track.addEventListener('transitionend', () => {
+    const firstCard = track.firstElementChild;
+    if (firstCard) track.append(firstCard);
+    track.style.transition = 'none';
+    track.style.transform = 'translateX(0)';
+    track.offsetHeight;
+    moving = false;
+  });
+
+  window.setInterval(advance, 3000);
+}
+
 function initializeLocaleSelectors() {
   $$('[data-locale-select]').forEach((select) => {
     select.addEventListener('change', async (event) => {
@@ -173,6 +201,7 @@ async function initialize() {
   initializeFaq();
   initializeMenu();
   initializeHeader();
+  initializePaymentSlider();
   initializeLocaleSelectors();
   document.addEventListener('localechange', () => {
     const selectedTab = $('[role="tab"][aria-selected="true"]');
