@@ -329,6 +329,7 @@ html[lang="ja"] :where(p,li,dt,dd){text-wrap:pretty}
   border-radius:28px
 }
 .payment--embedded .payment__inner{width:100%;margin:0}
+.payment__copy{width:100%;min-width:0}
 .payment-slider{
   --payment-slider-columns:3;
   --payment-slider-gap:16px;
@@ -357,6 +358,7 @@ html[lang="ja"] :where(p,li,dt,dd){text-wrap:pretty}
   background:transparent
 }
 .payment-method__logo{
+  position:relative;
   display:grid;
   width:100%;
   height:104px;
@@ -364,7 +366,7 @@ html[lang="ja"] :where(p,li,dt,dd){text-wrap:pretty}
   place-items:center;
   overflow:hidden
 }
-.payment-method__logo img{width:100%;height:100%;object-fit:contain;padding:12px}
+.payment-method__logo img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:10px}
 .payment-method__logo span{color:var(--color-muted);font-size:11px;font-weight:700;letter-spacing:.12em}
 .payment-method strong{font-size:18px;line-height:1.45}
 .payment-method small{margin-top:auto;padding-top:12px;color:var(--color-muted);font-size:13px;font-weight:500;line-height:1.55}
