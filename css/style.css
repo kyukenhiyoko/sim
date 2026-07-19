@@ -422,3 +422,47 @@ html:not([lang="ja"]) :where(h1,h2,h3){overflow-wrap:normal;word-break:normal;hy
   .payment--embedded{padding-inline:16px}
   .comparison-table td{padding-inline:8px}
 }
+
+/* Compact, brand-led hero. */
+.hero__brand{
+  display:flex;
+  align-items:center;
+  margin-bottom:34px;
+  color:#fff
+}
+.hero__brand img{width:min(420px,100%);height:auto}
+.hero__actions{display:flex;align-items:stretch;gap:14px;margin-top:38px}
+.hero__button{width:220px;max-width:calc(50% - 7px);min-height:52px;padding:10px 18px;font-size:15px}
+
+@media(max-width:767px){
+  .hero__copy{display:flex;flex-direction:column;justify-content:center;padding:36px 0 72px}
+  .hero__brand{margin-bottom:28px}
+  .hero__brand img{width:min(270px,100%);height:auto}
+  .hero__actions{display:flex;flex-direction:row;gap:10px;margin-top:30px}
+  .hero__button{width:auto;max-width:none;min-width:0;min-height:46px;flex:1 1 0;padding:9px 8px;font-size:13px;white-space:nowrap}
+  .hero .external-note{text-align:left;margin-left:0}
+}
+
+/* Transparent header over the hero image. */
+.site-header{
+  background:transparent;
+  border-bottom-color:transparent;
+  backdrop-filter:none
+}
+.site-header.is-scrolled{
+  background:rgb(47 37 30/.9);
+  border-bottom-color:rgb(255 255 255/.16);
+  box-shadow:0 8px 30px rgb(47 37 30/.18);
+  backdrop-filter:blur(12px)
+}
+.desktop-nav a{color:#fff}
+.language-control--desktop select{border-color:rgb(255 255 255/.46);background:rgb(47 37 30/.3);color:#fff}
+.language-control--desktop select option{color:var(--color-ink)}
+.menu-button span{background:#fff}
+.hero{min-height:100svh;padding-top:0}
+.hero__inner{min-height:100svh}
+
+@media(max-width:1023px){
+  .hero{min-height:100svh;padding-top:0}
+  .hero__inner{min-height:100svh}
+}

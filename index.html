@@ -22,7 +22,7 @@
   <link rel="preload" href="assets/images/web/hero.webp" as="image" media="(min-width: 768px)" type="image/webp">
   <link rel="preload" href="assets/images/web/hero-mobile.webp" as="image" media="(max-width: 767px)" type="image/webp">
   <link rel="stylesheet" href="css/reset.css?v=20260717-1">
-  <link rel="stylesheet" href="css/style.css?v=20260719-6">
+  <link rel="stylesheet" href="css/style.css?v=20260719-8">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -55,7 +55,7 @@
   <header class="site-header" data-header>
     <div class="site-header__inner">
       <a class="site-logo" href="#top" aria-label="SUMOU sim トップへ" data-i18n-aria-label="a11y.home">
-        <img src="assets/logo/logo-horizontal-pentagon.svg" width="340" height="80" alt="SUMOU sim">
+        <img src="assets/logo/logo-reversed-pentagon.svg" width="340" height="80" alt="SUMOU sim">
       </a>
       <nav class="desktop-nav" aria-label="メインナビゲーション" data-i18n-aria-label="a11y.mainNav">
         <a href="#features" data-i18n="nav.features">特徴</a>
@@ -106,17 +106,10 @@
     <section class="hero" id="top">
       <div class="hero__inner">
         <div class="hero__copy">
-          <p class="eyebrow" data-i18n="hero.eyebrow">外国人向けSIMサービス</p>
+          <div class="hero__brand">
+            <img src="assets/logo/logo-reversed-pentagon.svg" width="340" height="80" alt="SUMOU sim">
+          </div>
           <h1 class="hero__title"><span data-i18n="hero.titleLine1">日本での「つながる」を、</span><span class="display-font" data-i18n="hero.titleLine2">もっと簡単に。</span></h1>
-          <p class="hero__lead" data-i18n="hero.lead">日本語が不安でも、クレジットカードがなくても大丈夫。SUMOU simが、日本での毎日を通信からサポートします。</p>
-          <ul class="hero__badges" aria-label="サービスの特徴" data-i18n-aria-label="a11y.serviceFeatures">
-            <li data-i18n="badge.price">月額880円から</li>
-            <li data-i18n="badge.noBinding">最低利用期間なし</li>
-            <li data-i18n="badge.delivery">日本全国 送料無料</li>
-            <li data-i18n="badge.payment">コンビニ払い対応</li>
-            <li data-i18n="badge.language">多言語サポート</li>
-            <li data-i18n="badge.network">5G対応</li>
-          </ul>
           <div class="hero__media hero__media--mobile">
             <picture>
               <source media="(max-width: 767px)" srcset="assets/images/web/hero-mobile.webp">
@@ -124,8 +117,8 @@
             </picture>
           </div>
           <div class="hero__actions">
-            <a class="button button--primary button--large" href="#" data-cta="hero-apply" data-i18n="cta.apply">今すぐ申し込む</a>
-            <a class="button button--outline button--large" href="#plans" data-i18n="cta.plans">料金プランを見る</a>
+            <a class="button button--primary hero__button" href="#" data-cta="hero-apply" data-i18n="cta.apply">今すぐ申し込む</a>
+            <a class="button button--outline hero__button" href="#plans" data-i18n="cta.plans">料金プランを見る</a>
           </div>
           <small class="external-note" data-application-note data-i18n="cta.externalNote"></small>
         </div>
